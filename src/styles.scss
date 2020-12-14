@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400,700&display=swap");
+
+$color-green: #678c89;
+$color-darkgreen: #336666;
+$color-orange: #d35e0f;
+$color-white: #fff;
+$color-offwhite: #fcfcfc;
+$color-darkgrey: #1f1f1f;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.4;
+  background-color: $color-offwhite;
+  color: $color-darkgrey;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+  border: 1px solid $color-green;
+}
+
+.todo-item {
+  list-style-type: none;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid $color-green;
+
+  input {
+    margin-right: 1.5rem;
+  }
+}
+
+.btn-style {
+  background: $color-orange;
+  color: #fff;
+  border: 1px solid $color-orange;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+  outline: none;
+}
+
+.form-container {
+  display: flex;
+  width: 100%;
+}
+
+.input-text {
+  flex: 8;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.5rem;
+  background: rgba($color-green, 0.65);
+  border: none;
+  color: #fff;
+  outline: none;
+}
+
+.input-text::placeholder {
+  color: $color-white;
+  opacity: 0.8;
+}
+
+.input-submit {
+  flex: 2;
+  border: none;
+  background: $color-darkgreen;
+  color: $color-white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+  padding: 0 1.5rem;
+}
